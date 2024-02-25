@@ -1,703 +1,385 @@
 {
   "Defs": {
-    "TwitchToolkit.Incidents.StoreIncidentSimple": [
-      {
-        "defName": "Tornado",
-        "label": "tornado",
-        "abbreviation": "tornado",
-        "cost": 800,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Hazards.Tornado",
-        "karmaType": "Bad"
-      },
-      {
-        "defName": "Tornados",
-        "label": "tornados",
-        "abbreviation": "tornados",
-        "cost": 2600,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Hazards.Tornados",
-        "karmaType": "Bad"
-      },
-      {
-        "defName": "ClearWeather",
-        "label": "clear weather",
-        "abbreviation": "clearweather",
-        "cost": 400,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Weather.WeatherClear",
-        "karmaType": "Good"
-      },
-      {
-        "defName": "WeatherRain",
-        "label": "weather rain",
-        "abbreviation": "rain",
-        "cost": 350,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Weather.WeatherRain",
-        "karmaType": "Good"
-      },
-      {
-        "defName": "VomitRain",
-        "label": "vomit rain",
-        "abbreviation": "vomitrain",
-        "cost": 650,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Weather.VomitRain",
-        "karmaType": "Neutral"
-      },
-      {
-        "defName": "FoggyRain",
-        "label": "foggy rain",
-        "abbreviation": "foggyrain",
-        "cost": 300,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Weather.FoggyRain",
-        "karmaType": "Neutral"
-      },
-      {
-        "defName": "RainyThunderStorm",
-        "label": "rainy thunderstorm",
-        "abbreviation": "rainythunderstorm",
-        "cost": 250,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Weather.RainyThunderStorm",
-        "karmaType": "Neutral"
-      },
-      {
-        "defName": "DryThunderStorm",
-        "label": "dry thunderstorm",
-        "abbreviation": "drythunderstorm",
-        "cost": 450,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Weather.DryThunderStorm",
-        "karmaType": "Bad"
-      },
-      {
-        "defName": "SnowGentle",
-        "label": "snow gentle",
-        "abbreviation": "snowgentle",
-        "cost": 350,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Weather.SnowGentle",
-        "karmaType": "Neutral"
-      },
-      {
-        "defName": "SnowHard",
-        "label": "snow hard",
-        "abbreviation": "snowhard",
-        "cost": 450,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Weather.SnowHard",
-        "karmaType": "Bad"
-      },
-      {
-        "defName": "Fog",
-        "label": "fog",
-        "abbreviation": "fog",
-        "cost": 300,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Weather.Fog",
-        "karmaType": "Neutral"
-      },
-      {
-        "defName": "HeatWave",
-        "label": "heat wave",
-        "abbreviation": "heatwave",
-        "cost": 750,
-        "eventCap": 2,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Weather.HeatWave",
-        "karmaType": "Bad"
-      },
-      {
-        "defName": "Flashstorm",
-        "label": "flash storm",
-        "abbreviation": "flashstorm",
-        "cost": 400,
-        "eventCap": 2,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Weather.Flashstorm",
-        "karmaType": "Bad"
-      },
-      {
-        "defName": "ColdSnap",
-        "label": "cold snap",
-        "abbreviation": "coldsnap",
-        "cost": 800,
-        "eventCap": 2,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Weather.ColdSnap",
-        "karmaType": "Bad"
-      },
-      {
-        "defName": "SolarFlare",
-        "label": "solar flare",
-        "abbreviation": "solarflare",
-        "cost": 500,
-        "eventCap": 2,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Weather.SolarFlare",
-        "karmaType": "Bad"
-      },
-      {
-        "defName": "ShortCircuit",
-        "label": "short circuit",
-        "abbreviation": "shortcircuit",
-        "cost": 500,
-        "eventCap": 2,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Weather.ShortCircuit",
-        "karmaType": "Bad"
-      },
-      {
-        "defName": "ToxicFallout",
-        "label": "toxic fallout",
-        "abbreviation": "toxicfallout",
-        "cost": 6500,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Weather.ToxicFallout",
-        "karmaType": "Doom"
-      },
-      {
-        "defName": "VolcanicWinter",
-        "label": "volcanic winter",
-        "abbreviation": "volcanicwinter",
-        "cost": 3200,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Weather.VolcanicWinter",
-        "karmaType": "Doom"
-      },
-      {
-        "defName": "Eclipse",
-        "label": "eclipse",
-        "abbreviation": "eclipse",
-        "cost": 450,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Weather.Eclipse",
-        "karmaType": "Bad"
-      },
-      {
-        "defName": "Aurora",
-        "label": "aurora",
-        "abbreviation": "aurora",
-        "cost": 200,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Weather.Aurora",
-        "karmaType": "Good"
-      },
-      {
-        "defName": "Blight",
-        "label": "blight",
-        "abbreviation": "blight",
-        "cost": 700,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Misc.Blight",
-        "karmaType": "Bad"
-      },
-      {
-        "defName": "RefugeeChased",
-        "label": "refugee chased",
-        "abbreviation": "refugeechased",
-        "cost": 650,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Misc.RefugeeChased",
-        "karmaType": "Neutral"
-      },
-      {
-        "defName": "AnimalTame",
-        "label": "animal tame",
-        "abbreviation": "animaltame",
-        "cost": 150,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Misc.AnimalTame",
-        "karmaType": "Good"
-      },
-      {
-        "defName": "WandererJoins",
-        "label": "wanderer joins",
-        "abbreviation": "wandererjoins",
-        "cost": -10,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Misc.WandererJoins",
-        "karmaType": "Good"
-      },
-      {
-        "defName": "ResourcePodCrash",
-        "label": "resource pod crash",
-        "abbreviation": "resourcepodcrash",
-        "cost": 300,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Misc.ResourcePodCrash",
-        "karmaType": "Good"
-      },
-      {
-        "defName": "TransportPodCrash",
-        "label": "transport pod crash",
-        "abbreviation": "transportpodcrash",
-        "cost": 600,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Misc.TransportPodCrash",
-        "karmaType": "Good"
-      },
-      {
-        "defName": "TraderCaravanArrival",
-        "label": "trader caravan arrival",
-        "abbreviation": "tradercaravan",
-        "cost": 275,
-        "eventCap": 2,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Misc.TraderCaravanArrival",
-        "karmaType": "Good"
-      },
-      {
-        "defName": "OrbitalTraderArrival",
-        "label": "orbital trader arrival",
-        "abbreviation": "orbitaltraderarrival",
-        "cost": 350,
-        "eventCap": 2,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Misc.OrbitalTraderArrival",
-        "karmaType": "Good"
-      },
-      {
-        "defName": "Meteorite",
-        "label": "meteorite",
-        "abbreviation": "meteor",
-        "cost": 150,
-        "eventCap": 4,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Misc.Meteorite",
-        "karmaType": "Neutral"
-      },
-      {
-        "defName": "ManInBlack",
-        "label": "man in black",
-        "abbreviation": "maninblack",
-        "cost": 350,
-        "eventCap": 4,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Misc.ManInBlack",
-        "karmaType": "Good"
-      },
-      {
-        "defName": "MadAnimal",
-        "label": "mad animal",
-        "abbreviation": "madanimal",
-        "cost": 200,
-        "eventCap": 2,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Misc.MadAnimal",
-        "karmaType": "Bad"
-      },
-      {
-        "defName": "PsychicDrone",
-        "label": "psychic drone",
-        "abbreviation": "psychicdrone",
-        "cost": 400,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Misc.PsychicDrone",
-        "karmaType": "Bad"
-      },
-      {
-        "defName": "PsychicSoothe",
-        "label": "psychic soothe",
-        "abbreviation": "psychicsoothe",
-        "cost": 250,
-        "eventCap": 3,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Misc.PsychicSoothe",
-        "karmaType": "Good"
-      },
-      {
-        "defName": "AmbrosiaSprout",
-        "label": "ambrosia sprout",
-        "abbreviation": "ambrosiasprout",
-        "cost": 150,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Misc.AmbrosiaSprout",
-        "karmaType": "Good"
-      },
-      {
-        "defName": "HerdMigration",
-        "label": "herd migration",
-        "abbreviation": "herdmigration",
-        "cost": 200,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Misc.HerdMigration",
-        "karmaType": "Good"
-      },
-      {
-        "defName": "FarmAnimalsWanderIn",
-        "label": "farm animals wander in",
-        "abbreviation": "farmanimals",
-        "cost": 400,
-        "eventCap": 3,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Misc.FarmAnimalsWanderIn",
-        "karmaType": "Good"
-      },
-      {
-        "defName": "WildManWandersIn",
-        "label": "wild man wanders in",
-        "abbreviation": "wildman",
-        "cost": 300,
-        "eventCap": 3,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Misc.WildManWandersIn",
-        "karmaType": "Good"
-      },
-      {
-        "defName": "ThrumboPasses",
-        "label": "thrumbo passes",
-        "abbreviation": "rarethrumbos",
-        "cost": 500,
-        "eventCap": 3,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Misc.ThrumboPasses",
-        "karmaType": "Good"
-      },
-      {
-        "defName": "ShipChunkDrop",
-        "label": "ship chunk drop",
-        "abbreviation": "shipchunkdrop",
-        "cost": 300,
-        "eventCap": 3,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Misc.ShipChunkDrop",
-        "karmaType": "Good"
-      },
-      {
-        "defName": "TravelerGroup",
-        "label": "traveler group",
-        "abbreviation": "travelergroup",
-        "cost": 80,
-        "eventCap": 3,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Misc.TravelerGroup",
-        "karmaType": "Good"
-      },
-      {
-        "defName": "VisitorGroup",
-        "label": "visitor group",
-        "abbreviation": "visitorgroup",
-        "cost": 200,
-        "eventCap": 3,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Misc.VisitorGroup",
-        "karmaType": "Good"
-      },
-      {
-        "defName": "IncreaseRandomSkill",
-        "label": "increase random skill",
-        "abbreviation": "skillincrease",
-        "cost": 200,
-        "eventCap": 3,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Misc.IncreaseRandomSkill",
-        "karmaType": "Good"
-      },
-      {
-        "defName": "Party",
-        "label": "party",
-        "abbreviation": "party",
-        "cost": 400,
-        "eventCap": 3,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Misc.Party",
-        "karmaType": "Good"
-      },
-      {
-        "defName": "Alphabeavers",
-        "label": "alphabeavers",
-        "abbreviation": "alphabeavers",
-        "cost": 600,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Misc.Alphabeavers",
-        "karmaType": "Bad"
-      },
-      {
-        "defName": "ShipPartPoison",
-        "label": "ship part poison",
-        "abbreviation": "shippartpoison",
-        "cost": 1900,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Misc.ShipPartPoison",
-        "karmaType": "Bad"
-      },
-      {
-        "defName": "ShipPartPsychic",
-        "label": "ship part psychic",
-        "abbreviation": "shippartpsychic",
-        "cost": 2400,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Misc.ShipPartPsychic",
-        "karmaType": "Bad"
-      },
-      {
-        "defName": "MilitaryAid",
-        "label": "military aid",
-        "abbreviation": "militaryaid",
-        "cost": 700,
-        "eventCap": 2,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.MilitaryAid.CallForAid",
-        "karmaType": "Good"
-      },
-      {
-        "defName": "ReviveRandomPawn",
-        "label": "revive random pawn",
-        "abbreviation": "reviveanypawn",
-        "cost": 1200,
-        "eventCap": 2,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Special.ReviveRandomPawn",
-        "karmaType": "Good"
-      }
-    ],
+    "TwitchToolkit.Incidents.StoreIncidentSimple": {
+      "defName": "ReviveAll",
+      "label": "revive all",
+      "abbreviation": "reviveall",
+      "description": "Revives all deceased colonists in the colony.",
+      "cost": 22664,
+      "eventCap": 2,
+      "incidentHelper": "SirRandoo.ToolkitUtils.Incidents.ReviveAll",
+      "karmaType": "Good"
+    },
     "TwitchToolkit.Incidents.StoreIncidentVariables": [
       {
-        "defName": "Raid",
-        "label": "raid",
-        "abbreviation": "raid",
-        "cost": 1500,
+        "defName": "ReviveMe",
+        "label": "reviveme",
+        "description": "Revives the purchaser's pawn, assuming they have one.",
+        "abbreviation": "reviveme",
+        "cost": 2833,
         "eventCap": 2,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Raids.Raid",
-        "karmaType": "Bad",
-        "minPointsToFire": 1500,
-        "maxWager": 10000,
-        "syntax": "!buy raid 1500",
-        "variables": 1
+        "incidentHelper": "SirRandoo.ToolkitUtils.Incidents.ReviveMe",
+        "karmaType": "Good"
       },
       {
-        "defName": "DropRaid",
-        "label": "drop raid",
-        "abbreviation": "dropraid",
-        "cost": 1500,
+        "defName": "HealAll",
+        "label": "heal all",
+        "description": "Heals one affliction on all colonists.",
+        "abbreviation": "healall",
+        "cost": 17336,
         "eventCap": 2,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Raids.DropRaid",
-        "karmaType": "Bad",
-        "minPointsToFire": 1500,
-        "maxWager": 10000,
-        "syntax": "!buy dropraid 1500",
-        "variables": 1
-      },
-      {
-        "defName": "SapperRaid",
-        "label": "sapper raid",
-        "abbreviation": "sapperraid",
-        "cost": 1500,
-        "eventCap": 2,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Raids.SapperRaid",
-        "karmaType": "Bad",
-        "minPointsToFire": 1500,
-        "maxWager": 10000,
-        "syntax": "!buy sapperraid 1500",
-        "variables": 1
-      },
-      {
-        "defName": "SiegeRaid",
-        "label": "siege raid",
-        "abbreviation": "siegeraid",
-        "cost": 2500,
-        "eventCap": 2,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Raids.SiegeRaid",
-        "karmaType": "Bad",
-        "minPointsToFire": 2500,
-        "maxWager": 10000,
-        "syntax": "!buy siegeraid 1500",
-        "variables": 1
-      },
-      {
-        "defName": "MechanoidRaid",
-        "label": "mechanoid raid",
-        "abbreviation": "mechanoidraid",
-        "cost": 2500,
-        "eventCap": 2,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Raids.MechanoidRaid",
-        "karmaType": "Bad",
-        "minPointsToFire": 2500,
-        "maxWager": 10000,
-        "syntax": "!buy mechanoidraid 1500",
-        "variables": 1
-      },
-      {
-        "defName": "Infestation",
-        "label": "infestation",
-        "abbreviation": "infestation",
-        "cost": 2500,
-        "eventCap": 2,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Raids.Infestation",
-        "karmaType": "Bad",
-        "minPointsToFire": 2500,
-        "maxWager": 10000,
-        "syntax": "!buy infestation 1500",
-        "variables": 1
-      },
-      {
-        "defName": "ManhunterPack",
-        "label": "manhunter pack",
-        "abbreviation": "manhunterpack",
-        "cost": 1500,
-        "eventCap": 2,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Raids.ManhunterPack",
-        "karmaType": "Bad",
-        "minPointsToFire": 1500,
-        "maxWager": 10000,
-        "syntax": "!buy manhunterpack 1500",
-        "variables": 1
-      },
-      {
-        "defName": "Predators",
-        "label": "predators",
-        "abbreviation": "predators",
-        "cost": 2500,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Raids.Predators",
-        "karmaType": "Bad",
-        "minPointsToFire": 2500,
-        "maxWager": 10000,
-        "syntax": "!buy predators 2500",
-        "variables": 1
-      },
-      {
-        "defName": "RandomDisease",
-        "label": "random disease",
-        "abbreviation": "randomdisease",
-        "cost": 1000,
-        "eventCap": 2,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Diseases.RandomDisease",
-        "karmaType": "Bad",
-        "minPointsToFire": 1000,
-        "maxWager": 10000,
-        "syntax": "!buy randomdisease 1000",
-        "variables": 1
-      },
-      {
-        "defName": "SpecificDisease",
-        "label": "specific disease",
-        "abbreviation": "disease",
-        "cost": 1000,
-        "eventCap": 2,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Diseases.SpecificDisease",
-        "karmaType": "Bad",
-        "minPointsToFire": 1000,
-        "maxWager": 10000,
-        "syntax": "!buy disease diseasename 1000",
-        "variables": 2
-      },
-      {
-        "defName": "BuyPawn",
-        "label": "buy pawn",
-        "abbreviation": "pawn",
-        "cost": 1500,
-        "eventCap": 2,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Special.BuyPawn",
+        "incidentHelper": "SirRandoo.ToolkitUtils.Incidents.HealAll",
         "karmaType": "Good",
-        "minPointsToFire": 1500,
-        "syntax": "!buy pawn 1500",
-        "variables": 1
+        "customSettings": true,
+        "customSettingsHelper": "SirRandoo.ToolkitUtils.IncidentSettings.HealAll"
       },
       {
-        "defName": "LevelPawn",
-        "label": "level pawn",
-        "abbreviation": "levelskill",
-        "cost": 1500,
+        "defName": "HealRandomPawn",
+        "label": "heal random pawn",
+        "description": "Heals one affliction on a random pawn in the colony.",
+        "abbreviation": "healanypawn",
+        "cost": 2000,
         "eventCap": 2,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Special.LevelPawn",
+        "incidentHelper": "SirRandoo.ToolkitUtils.Incidents.HealRandom",
         "karmaType": "Good",
-        "minPointsToFire": 1500,
-        "maxWager": 10000,
-        "syntax": "!levelskill skillname 1500",
+        "customSettings": true,
+        "customSettingsHelper": "SirRandoo.ToolkitUtils.IncidentSettings.HealRandom"
+      },
+      {
+        "defName": "HealMe",
+        "label": "healme",
+        "description": "Heals one affliction on the purchaser's pawn, assuming they have one.",
+        "abbreviation": "healme",
+        "cost": 2167,
+        "eventCap": 2,
+        "incidentHelper": "SirRandoo.ToolkitUtils.Incidents.HealMe",
+        "karmaType": "Good",
+        "customSettings": true,
+        "customSettingsHelper": "SirRandoo.ToolkitUtils.IncidentSettings.HealMe"
+      },
+      {
+        "defName": "BuySurgery",
+        "label": "surgery",
+        "description": "Buys and queues a surgery on the purchaser's pawn, assuming they have one.",
+        "abbreviation": "surgery",
+        "cost": 1,
+        "eventCap": 5,
+        "incidentHelper": "SirRandoo.ToolkitUtils.Incidents.BuySurgery",
+        "karmaType": "Neutral",
         "variables": 2,
-        "customSettings": true,
-        "customSettingsHelper": "TwitchToolkit.IncidentHelpers.IncidentHelper_Settings.LevelPawnSettings"
+        "modExtensions": {
+          "li": {
+            "EventType": "Item",
+            "Parameters": {
+              "li": [
+                {
+                  "Name": "Item"
+                },
+                {
+                  "Names": {
+                    "li": [
+                      "Quantity",
+                      "BodyPart"
+                    ]
+                  },
+                  "Optional": true
+                }
+              ]
+            }
+          }
+        }
       },
       {
-        "defName": "AddTrait",
-        "label": "add trait",
-        "abbreviation": "trait",
-        "cost": 3500,
-        "eventCap": 5,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Traits.AddTrait",
-        "karmaType": "Good",
-        "syntax": "!buy trait cannibal",
+        "defName": "PassionShuffle",
+        "label": "passion shuffle",
+        "description": "Shuffles the purchaser's pawn's passions, assuming they have one. If the Interests mod is active, this command also shuffles their interests.",
+        "abbreviation": "passionshuffle",
+        "cost": 2000,
+        "eventCap": 4,
+        "incidentHelper": "SirRandoo.ToolkitUtils.Incidents.PassionShuffle",
+        "karmaType": "Neutral",
         "variables": 1,
-        "customSettings": true,
-        "customSettingsHelper": "TwitchToolkit.IncidentHelpers.IncidentHelper_Settings.AddTraitSettings"
+        "modExtensions": {
+          "li": {
+            "Parameters": {
+              "li": {
+                "Name": "Skill"
+              }
+            }
+          }
+        }
       },
       {
-        "defName": "RemoveTrait",
-        "label": "remove trait",
-        "abbreviation": "removetrait",
-        "cost": 5500,
+        "defName": "ReplaceTrait",
+        "label": "replace trait",
+        "abbreviation": "replacetrait",
+        "description": "Replaces a trait on the purchaser's pawn, assuming they have one, with the specified trait.",
+        "cost": 1,
+        "eventCap": 6,
+        "incidentHelper": "SirRandoo.ToolkitUtils.Incidents.ReplaceTrait",
+        "karmaType": "Neutral",
+        "variables": 2,
+        "modExtensions": {
+          "li": {
+            "EventType": "Trait",
+            "Parameters": {
+              "li": [
+                {
+                  "Name": "OldTrait"
+                },
+                {
+                  "Name": "NewTrait"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "defName": "RescueMe",
+        "label": "rescue me",
+        "abbreviation": "rescueme",
+        "description": "Creates a quest where the objective is to rescue the purchaser's most recent colonist from their kidnappers.",
+        "cost": 1200,
         "eventCap": 5,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Traits.RemoveTrait",
-        "karmaType": "Good",
-        "syntax": "!buy removetrait cannibal",
-        "variables": 1
-      },
-      {
-        "defName": "ChangeGender",
-        "label": "change gender",
-        "abbreviation": "genderswap",
-        "cost": 600,
-        "eventCap": 2,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Special.ChangeGender",
+        "incidentHelper": "SirRandoo.ToolkitUtils.Incidents.RescueMe",
         "karmaType": "Neutral"
       },
       {
-        "defName": "Item",
-        "label": "item",
-        "abbreviation": "item",
-        "cost": 0,
-        "eventCap": 20,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Special.Item",
+        "defName": "FullHeal",
+        "label": "full heal",
+        "abbreviation": "fullheal",
+        "cost": 2167,
+        "description": "Heals all afflictions on the purchaser's pawn, assuming they have one. The purchaser will be charged for each affliction removed.",
+        "eventCap": 5,
+        "incidentHelper": "SirRandoo.ToolkitUtils.Incidents.FullHeal",
         "karmaType": "Good",
-        "minPointsToFire": 0,
-        "syntax": "!buy itemname quantity",
+        "customSettings": true,
+        "customSettingsHelper": "SirRandoo.ToolkitUtils.IncidentSettings.FullHeal",
+        "modExtensions": {
+          "li": {
+            "EventType": "Variable"
+          }
+        }
+      },
+      {
+        "defName": "AddPassion",
+        "label": "add passion",
+        "abbreviation": "passion",
+        "description": "Deepens the purchaser's pawn's passion in the specified skill. Depending on the settings, the event's effect may differ from purchase to purchase.",
+        "cost": 7000,
+        "eventCap": 3,
+        "incidentHelper": "SirRandoo.ToolkitUtils.Incidents.AddPassion",
+        "karmaType": "Good",
+        "variables": 1,
+        "customSettings": true,
+        "customSettingsHelper": "SirRandoo.ToolkitUtils.IncidentSettings.AddPassion",
+        "modExtensions": {
+          "li": {
+            "Parameters": {
+              "li": {
+                "Name": "Skill"
+              }
+            }
+          }
+        }
+      },
+      {
+        "defName": "RemovePassion",
+        "label": "remove passion",
+        "description": "Lessens the purchaser's pawn's passion in the specified skill. Depending on the settings, the event's effect may differ from purchase to purchase.",
+        "abbreviation": "removepassion",
+        "cost": 5000,
+        "eventCap": 3,
+        "incidentHelper": "SirRandoo.ToolkitUtils.Incidents.RemovePassion",
+        "karmaType": "Neutral",
+        "variables": 1,
+        "customSettings": true,
+        "customSettingsHelper": "SirRandoo.ToolkitUtils.IncidentSettings.RemovePassion",
+        "modExtensions": {
+          "li": {
+            "Parameters": {
+              "li": {
+                "Name": "Skill"
+              }
+            }
+          }
+        }
+      },
+      {
+        "defName": "Backpack",
+        "label": "backpack",
+        "description": "Purchases an item and puts it in the purchaser's pawn's inventory. If the item is equippable, the item will instead be equipped as a weapon, or as apparel.",
+        "abbreviation": "backpack",
+        "cost": 1,
+        "eventCap": 6,
+        "incidentHelper": "SirRandoo.ToolkitUtils.Incidents.Backpack",
+        "karmaType": "Neutral",
         "variables": 2,
         "customSettings": true,
-        "customSettingsHelper": "TwitchToolkit.IncidentHelpers.IncidentHelper_Settings.BuyItemSettings"
+        "customSettingsHelper": "SirRandoo.ToolkitUtils.IncidentSettings.Backpack",
+        "modExtensions": {
+          "li": {
+            "EventType": "Item",
+            "Parameters": {
+              "li": [
+                {
+                  "Name": "Item"
+                },
+                {
+                  "Name": "Amount",
+                  "Optional": true
+                }
+              ]
+            }
+          }
+        }
       },
       {
-        "defName": "BuyPrisoner",
-        "label": "prisoner",
-        "abbreviation": "prisoner",
-        "cost": 800,
+        "defName": "SetTraits",
+        "label": "set traits",
+        "description": "Sets the purchaser's pawn's traits to the traits specified. Every trait change will be charged individually according to the settings for said trait.",
+        "abbreviation": "settraits",
+        "cost": 1,
+        "eventCap": 6,
+        "incidentHelper": "SirRandoo.ToolkitUtils.Incidents.SetTraits",
+        "karmaType": "Neutral",
+        "variables": 4,
+        "modExtensions": {
+          "li": {
+            "EventType": "Trait",
+            "Parameters": {
+              "li": {
+                "Name": "Trait(s)"
+              }
+            }
+          }
+        }
+      },
+      {
+        "defName": "ClearTraits",
+        "label": "clear traits",
+        "description": "Removes all the purchaser's pawn's traits. Every removal will be charged individually according to the settings for said trait.",
+        "abbreviation": "cleartraits",
+        "cost": 1,
+        "eventCap": 6,
+        "incidentHelper": "SirRandoo.ToolkitUtils.Incidents.ClearTraits",
+        "karmaType": "Neutral",
+        "variables": 0,
+        "modExtensions": {
+          "li": {
+            "EventType": "Trait"
+          }
+        }
+      },
+      {
+        "defName": "UseItem",
+        "label": "use item",
+        "description": "Purchases an item and uses it on the purchaser's pawn.",
+        "abbreviation": "use",
+        "cost": 1,
+        "eventCap": 6,
+        "incidentHelper": "SirRandoo.ToolkitUtils.Incidents.Use",
+        "karmaType": "Neutral",
+        "variables": 1,
+        "modExtensions": {
+          "li": {
+            "EventType": "Item",
+            "Parameters": {
+              "li": [
+                {
+                  "Name": "Item"
+                },
+                {
+                  "Name": "Quantity",
+                  "Optional": true
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "defName": "WearItem",
+        "label": "wear item",
+        "description": "Purchases an item and puts it on the purchaser's pawn.",
+        "abbreviation": "wear",
+        "cost": 1,
+        "eventCap": 6,
+        "incidentHelper": "SirRandoo.ToolkitUtils.Incidents.Wear",
+        "karmaType": "Neutral",
+        "variables": 1,
+        "modExtensions": {
+          "li": {
+            "EventType": "Item",
+            "Parameters": {
+              "li": {
+                "Name": "Item"
+              }
+            }
+          }
+        }
+      },
+      {
+        "defName": "EquipWeapon",
+        "label": "equip weapon",
+        "description": "Purchases a weapon and equips it on the purchaser's pawn.",
+        "abbreviation": "equip",
+        "cost": 1,
+        "eventCap": 6,
+        "incidentHelper": "SirRandoo.ToolkitUtils.Incidents.Equip",
+        "karmaType": "Neutral",
+        "variables": 1,
+        "modExtensions": {
+          "li": {
+            "EventType": "Item",
+            "Parameters": {
+              "li": {
+                "Name": "Item"
+              }
+            }
+          }
+        }
+      },
+      {
+        "defName": "RandomChildhood",
+        "label": "random childhood",
+        "abbreviation": "randomchildhood",
+        "description": "Changes the purchaser's pawn's childhood to a random compatible one. Compatibility to defined by whether or not the pawn's current traits aren't forbidden by the new childhood.",
+        "cost": 3000,
         "eventCap": 5,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Special.BuyPrisoner",
-        "karmaType": "Good",
-        "syntax": "!buy prisoner"
+        "incidentHelper": "SirRandoo.ToolkitUtils.Incidents.Childhood",
+        "karmaType": "Neutral"
       },
       {
-        "defName": "VisitColony",
-        "label": "visit colony",
-        "abbreviation": "visitcolony",
-        "cost": 300,
+        "defName": "RandomAdulthood",
+        "label": "random adulthood",
+        "abbreviation": "randomadulthood",
+        "description": "Changes the purchaser's pawn's adulthood to a random compatible one. Compatibility to defined by whether or not the pawn's current traits aren't forbidden by the new adulthood.",
+        "cost": 3000,
         "eventCap": 5,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Special.VisitColony",
-        "karmaType": "Good",
-        "syntax": "!buy visitcolony"
+        "incidentHelper": "SirRandoo.ToolkitUtils.Incidents.Adulthood",
+        "karmaType": "Neutral"
       },
       {
-        "defName": "BeRescued",
-        "label": "be rescued",
-        "abbreviation": "berescued",
-        "cost": 900,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Special.BeRescued",
-        "karmaType": "Good",
-        "syntax": "!buy berescued"
-      },
-      {
-        "defName": "RandomInspire",
-        "label": "random inspiration",
-        "abbreviation": "randominspire",
-        "cost": 450,
+        "defName": "Smite",
+        "label": "smite",
+        "abbreviation": "smite",
+        "description": "Smites the viewer's pawn the purchaser specifies.",
+        "cost": 2500,
         "eventCap": 2,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Special.Inspiration",
-        "karmaType": "Good",
-        "syntax": "!buy randominspire"
+        "incidentHelper": "SirRandoo.ToolkitUtils.Incidents.Smite",
+        "karmaType": "Doom"
       },
       {
-        "defName": "ToryTalkerVote",
-        "label": "tory talker vote",
-        "abbreviation": "torytalkervote",
-        "cost": 750,
+        "defName": "Sanctuary",
+        "label": "sanctuary",
+        "abbreviation": "sanctuary",
+        "description": "A \"second chance\" for a dying colony. If you want to know specifically what it does, please refer to the ToolkitUtils event wiki.",
+        "cost": 100000,
         "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Votes.ToryTalkerVote",
-        "karmaType": "Neutral",
-        "syntax": "!buy torytalkervote"
-      },
-      {
-        "defName": "HodlBotVote",
-        "label": "hodl bot vote",
-        "abbreviation": "hodlbotvote",
-        "cost": 600,
-        "eventCap": 1,
-        "incidentHelper": "TwitchToolkit.IncidentHelpers.Votes.HodlBotVote",
-        "karmaType": "Neutral",
-        "syntax": "!buy hodlbotvote"
+        "incidentHelper": "SirRandoo.ToolkitUtils.Incidents.Sanctuary",
+        "karmaType": "Good"
       }
     ]
   }
